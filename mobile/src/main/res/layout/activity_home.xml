@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,9 +7,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="1"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    android:paddingTop="4dp">
+    >
+
+   <!-- <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        />-->
 
     <TextView
         android:layout_width="match_parent"
@@ -24,52 +31,70 @@
         android:text="@string/have_nothing"
         android:gravity="center_vertical"
         android:textColor="@color/abc_input_method_navigation_guard"
-        android:textSize="22sp" />
+        android:textSize="22sp"
+        android:paddingTop="4dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        tools:ignore="PrivateResource" />
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
         android:weightSum="1"
-        android:layout_weight="0.04">
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:text="@string/date"
             android:id="@+id/todayis"
-            android:layout_weight="0.47"
-            android:textSize="42sp"
-            android:gravity="center_horizontal"
-            android:textColor="@color/bright_foreground_inverse_material_dark" />
+            android:layout_weight="0.38"
+            android:textSize="28sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/bright_foreground_inverse_material_dark"
+            tools:ignore="PrivateResource"
+            android:textStyle="bold" />
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="152dp"
+        <TextView
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.53">
+            android:text="New Text"
+            android:id="@+id/date"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_weight="0.65"
+            android:textColor="@color/background_material_dark"
+            tools:ignore="NestedWeights,PrivateResource"
+            android:paddingRight="10dp"
+            android:textSize="26sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:text="New Text"
-                android:id="@+id/date"
-                android:textAlignment="center"
-                android:gravity="center_vertical"
-                android:layout_weight="0.46"
-                android:textSize="22sp"
-                android:textColor="@color/background_material_dark" />
+    </LinearLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:text="New Text"
-                android:id="@+id/weekandday"
-                android:layout_weight="0.19"
-                android:gravity="clip_vertical|center_horizontal"
-                android:textStyle="italic"
-                android:textColor="@color/bright_foreground_disabled_material_light" />
-        </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_weight="0.4" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/weekandday"
+            android:layout_weight="0.65"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="12sp"
+            android:textStyle="italic" />
     </LinearLayout>
 
 </LinearLayout>
