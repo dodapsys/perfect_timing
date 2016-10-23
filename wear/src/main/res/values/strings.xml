@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Perfect Timing</string>
+    <string name="have_nothing">You have nothing planned for today!</string>
+    <string name="date">Today is </string>
+</resources>
